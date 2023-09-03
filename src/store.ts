@@ -13,7 +13,7 @@ let budg: number=10000;
 if (!!localexp && JSON.parse(localexp).length>0) {
     let data = JSON.parse(localexp);
     for (let obj of data) {
-        exp.push(new Expense(obj['name'], obj['price']));
+        exp.push(new Expense(obj['name'], obj['price'],obj['color']));
     }    
 } else{
     exp=[new Expense("Food",1000),new Expense("Entertainment",1000),new Expense("Rent",1000)]

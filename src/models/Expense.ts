@@ -3,10 +3,10 @@ class Expense{
     public price: number;
     public color: string;
 
-    constructor(name: string, price: number) {
+    constructor(name: string, price: number,color:string=null) {
         this.name = name;
         this.price = price;
-        this.color = this.generateColor();
+        this.color = color ?? this.generateColor();
     }
     
     
