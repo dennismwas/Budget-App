@@ -1,8 +1,8 @@
 import { writable } from "svelte/store";
 import Expense from "./models/Expense";
 
-let localexp = localStorage.getItem("expenses")
-let localbudg = localStorage.getItem("budget")
+let localexp = localStorage.getItem("exp")
+let localbudg = localStorage.getItem("budg")
 
 let exp: Expense[]=[];
 let budg: number=1000;

@@ -4,12 +4,11 @@
   import ExpenseChart from "./components/ExpenseChart.svelte";
   import { alert, expenses, budget } from "./store";
   import Modal from "./components/Modal.svelte";
-  import { onDestroy } from "svelte";
 
 
   //monitor any change and save locally for next time usage
-  $: localStorage.setItem("expenses", JSON.stringify($expenses));
-  $: localStorage.setItem("budget", JSON.stringify($budget));
+  $: localStorage.setItem("exp", JSON.stringify($expenses));
+  $: localStorage.setItem("budg", JSON.stringify($budget));
 
 
 
