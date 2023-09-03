@@ -5,7 +5,7 @@ let localexp = localStorage.getItem("exp")
 let localbudg = localStorage.getItem("budg")
 
 let exp: Expense[]=[];
-let budg: number=1000;
+let budg: number=10000;
 
 
 //check if there is any expenses saved locally and read them else create new
