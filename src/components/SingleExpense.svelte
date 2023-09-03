@@ -6,11 +6,8 @@
     export let expense :Expense;
 
     const removeExpense=()=>$expenses=[...$expenses.filter(x=>x.name!=expense.name)];
-
-    const capitalize=(str:string)=>{
-        let len=str.length;
-        return `${str[0].toUpperCase()}${str.substring(1,len)}`
-    }
+    
+    const capitalize=(str:string)=>`${str[0].toUpperCase()}${str.substring(1,str.length)}`
 
 
 </script>

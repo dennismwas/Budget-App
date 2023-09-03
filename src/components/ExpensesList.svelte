@@ -16,9 +16,7 @@
         <p class="text-center"> No expenses currently defined add using form above </p>
     {:else}
         <div>
-            {#each $expenses.filter((x) => x.name
-                    .toLowerCase()
-                    .includes(searchTerm.toLowerCase())) as expense}
+            {#each $expenses.filter((x) => x.name.toLowerCase().includes(searchTerm.toLowerCase())) as expense}
                 <SingleExpense {expense} />
             {/each}
         </div>

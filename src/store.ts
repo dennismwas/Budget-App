@@ -11,7 +11,7 @@ let budg: number=10000;
 //check if there is any expenses saved locally and read them else create new
 
 if (!!localexp && JSON.parse(localexp).length>0) {
-    let data = JSON.parse(localexp);
+    let data :[]= JSON.parse(localexp);
     for (let obj of data) {
         exp.push(new Expense(obj['name'], obj['price'],obj['color']));
     }    
@@ -30,5 +30,3 @@ export const expenses = writable(exp);
 export const budget = writable(budg);
 export const showModal = writable(false);
 export const alert = writable('');
-
-
