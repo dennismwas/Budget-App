@@ -18,13 +18,8 @@
        //check if expense exists
        const exists=$expenses.find((x)=>x.name.toLowerCase()==expense.name.toLowerCase());
     
-
        //check current total expenses prices
        const existingExpenses=$expenses.reduce((x,y)=>x+y.price,0);
-
-       console.log(typeof(existingExpenses))
-       console.log(typeof(expense.price));
-       console.log(existingExpenses+expense.price);
 
         if(exists){
             setAlert("Expense already exists");
