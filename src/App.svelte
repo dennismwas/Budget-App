@@ -8,16 +8,9 @@
 
 
   //monitor any change and save locally for next time usage
-  const unsubExp = expenses.subscribe((data) => localStorage.setItem("expenses", JSON.stringify(data)));
-  const unsubBudg = budget.subscribe((data) => localStorage.setItem("budget", JSON.stringify(data)));
+  $: localStorage.setItem("expenses", JSON.stringify($expenses));
+  $: localStorage.setItem("budget", JSON.stringify($budget));
 
-
-  onDestroy(() => {
-    //unregister from subscriptions
-    
-    unsubExp();
-    unsubBudg();
-  });
 
 
 </script>
