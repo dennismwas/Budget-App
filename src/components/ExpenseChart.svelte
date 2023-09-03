@@ -12,7 +12,8 @@
   import { onDestroy } from "svelte";
 
   ChartJS.register(Title, Tooltip, Legend, ArcElement, CategoryScale);
-  let data = {};
+  
+  let data = {datasets:[],labels:[]};
 
   function random_rgb() {
     const o = Math.random;
