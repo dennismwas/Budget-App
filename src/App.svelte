@@ -7,8 +7,8 @@
 
 
   //monitor any change and save locally for next time usage
-  $: localStorage.setItem("exp", JSON.stringify($expenses));
-  $: localStorage.setItem("budg", JSON.stringify($budget));
+  $: localStorage.setItem("expenses", JSON.stringify($expenses));
+  $: localStorage.setItem("budget", JSON.stringify($budget));
 
 
 
