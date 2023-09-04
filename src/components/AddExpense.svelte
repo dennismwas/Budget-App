@@ -55,6 +55,7 @@
             <input
                 type="number"
                 step="0.01"
+                min="0"
                 name="cost"
                 required
                 class="px-3 py-1 border text-black rounded-xl"

@@ -32,6 +32,7 @@
             <input
                 type="number"
                 step="0.01"
+                min="0"
                 name="budget"
                 class="mx-auto px-3 py-1 border"
             />
