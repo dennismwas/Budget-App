@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "install":"npm run install --force",
     "dev": "vite",
     "build": "npm run check && vite build",
     "preview": "vite preview",
